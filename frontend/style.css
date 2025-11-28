@@ -9,6 +9,39 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+
+    .cabecalho h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-sub {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projetos {
+        padding: 2rem;
+    }
+
+    .sobre {
+        padding: 3rem 1rem;
+    }
+
+    .contato {
+        padding: 3rem 1rem;
+    }
+
+    .menu {
+        gap: 1.5rem;
+    }
+}
+
 :root{
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
