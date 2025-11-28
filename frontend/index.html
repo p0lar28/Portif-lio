@@ -79,8 +79,8 @@
         function enviarWhats(event) {
             event.preventDefault()
 
-            const nome = document.getElementById('nome').value();
-            const mensagem = document.getElementById('mensagem').value();
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
             const telefone = '5511958415601'
             const texto = `Opa me chamo ${nome}, ${mensagem}`
             const msgformat = encodeURIComponent(texto);
@@ -92,5 +92,6 @@
     </script>
 
 </body>
+
 
 </html>
