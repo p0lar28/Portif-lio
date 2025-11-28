@@ -9,39 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-
-    .cabecalho h1 {
-        font-size: 2.5rem;
-    }
-
-    .cabecalho-sub {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .foto-perfil {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projetos {
-        padding: 2rem;
-    }
-
-    .sobre {
-        padding: 3rem 1rem;
-    }
-
-    .contato {
-        padding: 3rem 1rem;
-    }
-
-    .menu {
-        gap: 1.5rem;
-    }
-}
-
 :root{
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
@@ -56,6 +23,7 @@ body{
     color: var(--claro);
 }
 
+/* NAVBAR */
 .navegacao{
     position: fixed;
     top: 0;
@@ -95,6 +63,7 @@ body{
     width: 100%;
 }
 
+/* HOME */
 .cabecalho{
     min-height: 100vh;
     display: flex;
@@ -102,7 +71,6 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
 
 .foto-perfil{
     width: 275px;
@@ -112,7 +80,6 @@ body{
     border: 4px solid var(--vidro);
     animation: flutuar 5s ease-in-out infinite;
 }
-
 
 h1{
     font-size: 3.5rem;
@@ -126,6 +93,7 @@ h1{
     color: var(--claro);    
 }
 
+/* SOBRE */
 .sobre{
     padding: 6rem 2rem;
 }
@@ -152,9 +120,9 @@ h1{
     font-size: 1.15rem;
 }
 
+/* PROJETOS */
 .projetos{
     padding: 2rem 6rem;
-
 }
 
 .projetos-caixa{
@@ -184,7 +152,6 @@ h1{
 .projetos-card:hover{
     box-shadow: 0 10px 20px rgba(79, 70 , 229, 0.2);
     transform: translateY(-10px) scale(1.05); 
-
 }
 
 .projetos-imagem{
@@ -206,7 +173,7 @@ h1{
     line-height: 1.2rem;
 }
 
-
+/* CONTATO */
 .contato{
     padding: 6rem 2rem;
 }
@@ -226,7 +193,6 @@ h1{
     border: 1px solid var(--vidro);
     border-radius: 16px;
 }
-
 
 .campo-form{
     width: 100%;
@@ -264,6 +230,7 @@ h1{
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
+/* FUNDO */
 .particulas{
     position: fixed;
     top: 0;
@@ -278,7 +245,6 @@ h1{
     var(--maisescuro);
 }
 
-
 @keyframes flutuar{
     0%, 100%{
         transform: translateY(0);
@@ -288,4 +254,38 @@ h1{
     }
 }
 
+/* ========================================= */
+/* 🔥 RESPONSIVIDADE PARA CELULAR */
+/* ========================================= */
+@media (max-width: 768px) {
 
+    .menu {
+        gap: 1.2rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-sub{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .foto-perfil{
+        width: 180px;
+        height: 180px;
+    }
+
+    .projetos{
+        padding: 2rem;
+    }
+
+    .sobre{
+        padding: 3rem 1rem;
+    }
+
+    .contato{
+        padding: 3rem 1rem;
+    }
+}
